@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: arial,sans-serif;
+}
+.googleImage img{
+    height: 90px;
+}
+
+nav{
+    height: 60px;
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10px;
+}
+
+nav> div{
+    padding: 0 10px;
+}
+.googleImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 92px;
+}
+
+
+.searchBar{
+    display: flex;
+    /* justify-content: space-between; */
+    height: 44px;
+    width:100%;
+    /* padding: 3px 5px; */
+    border: 1px solid grey;
+    align-items: center;
+    border-radius: 27px;
+}
+.searchBar>span{
+    margin: 0 8px;
+}
+#search, #search:active{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+input[type=search]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 24px;
+    width: 24px;
+    /* margin-left: .4em; */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23777'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
+    cursor: pointer;
+    border-right: 1px solid grey;
+}
+
+.searchBtns{
+    display: flex;
+    justify-content: center;
+}
+
+.searchbtn, .luckySearch{
+    padding: 0.5em;
+    margin:10px 3px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.lan{
+    text-decoration: none;
+    color: blue;
+}
+
+.lan:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: #f8f9fa;
+    /* padding: 0 20px; */
+    position: absolute;
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    bottom: 1px;
+}
+
+.location{
+    margin:0 30px;
+}
+.location, .links{
+    margin: 15px 0;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+.links span{
+    padding: 15px;
+}
